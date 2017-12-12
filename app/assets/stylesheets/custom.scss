@@ -2,6 +2,16 @@ $navbar-default-bg: #312312;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold.ttf");
+}
+
 #logo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -122,17 +132,36 @@ tr:nth-child(even) {
 // новые стили
 
 body {
+  position: relative;
   padding-top: 60px;
   background: #fff !important;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+}
+
+.nav-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  &.open {
+    display: block;
+  }
 }
 
 .header{
   position: fixed;
   display: flex;
   top: 0;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
+  left: 0;
+  // max-width: 100%;
+  width: calc(100% - 30px);
+  min-height: 51px;
+  margin: 0 15px;
   padding: 0 20px;
   justify-content: flex-start;
   align-items: center;
@@ -144,7 +173,7 @@ body {
 
 .logo {
     padding-right: 30px;
-    font-size: 26px;
+    font: 26px RobotoBold, sans-serif;
     font-weight: bold;
     color: #fff;
   }
@@ -163,7 +192,7 @@ body {
   a {
     display: block;
     padding: 15px 30px;
-    font-size: 18px;
+    font: 18px RobotoRegular, sans-serif;
     color: #fff;
     transition: .3s;
     &:hover{
@@ -212,9 +241,13 @@ body {
 .caption1 {
   margin-bottom: 30px;
   padding: 0 30px;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font: 28px RobotoBold, sans-serif;
+
+
+}
+
+h1 {
+  font: 28px RobotoBold, sans-serif !important;
 
 }
 
@@ -230,6 +263,7 @@ body {
 .profile {
   max-width: 400px;
   width: 100%;
+  max-height: 400px;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(66, 134, 244, .7);
@@ -240,13 +274,12 @@ body {
 }
 
 .description{
-  max-width: 500px;
+  max-width: 700px;
   margin: 5px auto;
   padding: 15px;
-  font-size: 30px;
+  font:  26px RobotoRegular, sans-serif;
   font-weight: 300;
-  font-family: verdana, arial, helvetica, sans-serif;
-  line-height: 44px;
+  line-height: 30px;
   background: rgba(66, 134, 244, .3);
   border-radius: 5px;
   box-shadow: 0 0 5px 2px rgba(66, 134, 244, .7);
@@ -256,7 +289,7 @@ body {
 
 .buttons{
   display: flex;
-  margin: 30px auto 50px;
+  margin: 15px auto 0;
   padding: 0 10px;
   justify-content: center;
   flex-wrap: wrap;
@@ -269,6 +302,7 @@ body {
   background: #10ad0d;
   box-shadow: 1.5px 3px 5px 0 rgba(16, 173, 13, .7);
   border-radius: 5px;
+  font: 18px RobotoBold, sans-serif;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -284,8 +318,13 @@ body {
   }
 }
 
+.empty{
+  display: none;
+}
+
 .footer {
   display: flex;
+  height: 70px;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -293,7 +332,8 @@ body {
   color: #fff;
   background-color: #4286f4;
   .footer_text{
-    font-size: 20px;
+    font: 20px RobotoRegular, sans-serif;
+    margin-bottom: 0;
   }
 }
 
@@ -352,7 +392,7 @@ body {
   background: rgba(66, 134, 244, .2);
   label {
     text-transform: uppercase;
-    font-size: 18px;
+    font: 18px RobotoRegular, sans-serif;
     font-weight: normal;
   }
   .input {
@@ -363,7 +403,7 @@ body {
     background: #fff;
     border: 1px solid rgba(66, 134, 244, .9);
     outline: none;
-    font-size: 16px;
+    font: 16px RobotoRegular, sans-serif;
     transition: .3s;
     &:focus {
       border: 1px solid #236be0;
@@ -387,6 +427,7 @@ input[type="submit"] {
   border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
+  font: 20px RobotoBold, sans-serif;
   font-weight: bold;
   text-align: center;
   transition: .3s;
@@ -434,9 +475,12 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width : 768px) {
-  .description {
-    font-size: 24px;
-    line-height: 28px;
+  .description{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .btn1 {
+    font-size: 16px;
   }
 }
 

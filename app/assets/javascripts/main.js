@@ -16,13 +16,19 @@ $(document).on('turbolinks:load', function() {
 	$(".mobile-menu").click(function(){
 		$(".mobile-menu").toggleClass("open");
 		$(".main-menu").toggleClass("open");
-		console.log($(".mobile-menu"));
+		$(".nav-bg").toggleClass("open");
 	});
 
-	$(".main-menu").click(function(){
-		$(".main-menu").removeClass("open");
-		$(".mobile-menu").removeClass("open");
+	$(".nav-bg").click(function(){
+		$(".mobile-menu").toggleClass("open");
+		$(".main-menu").toggleClass("open");
+		$(".nav-bg").toggleClass("open");
 	});
+
+	// $(".main-menu").click(function(){
+	// 	$(".main-menu").removeClass("open");
+	// 	$(".mobile-menu").removeClass("open");
+	// });
 
 });
 
