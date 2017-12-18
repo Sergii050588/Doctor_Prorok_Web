@@ -30,5 +30,9 @@ $(document).on('turbolinks:load', function() {
 	// 	$(".mobile-menu").removeClass("open");
 	// });
 
+	$('.faq-item').find('div').click(function(){
+       $(this).next().stop().slideToggle();
+   }).next().stop().hide();
+
 });
 
