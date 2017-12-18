@@ -246,7 +246,7 @@ body {
 
 }
 
-h1 {
+h1, h2 {
   font: 28px RobotoBold, sans-serif !important;
 
 }
@@ -442,6 +442,91 @@ input[type="submit"] {
   }
 }
 
+// контакты
+
+.contacts-wrap {
+  background: url('/assets/bg1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.contacts-bg {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding: 15px;
+  align-items: center;
+  background: rgba(66, 134, 244, .7);
+  text-align: center;
+}
+
+.contacts-list {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px;
+  background: rgba(66, 134, 244, .3);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(66, 134, 244, .7);
+  color: #fff;
+}
+
+.contacts-name {
+  font: 24px RobotoBold, sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contacts-item {
+  font: 18px RobotoRegular, sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  i {
+    margin-right: 5px;
+    font-size: 22px;
+  }
+}
+
+// faq
+
+.faq-wrap {
+  background: url('/assets/bg-faq.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.faq-bg {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding: 15px;
+  background: rgba(66, 134, 244, .7);
+}
+
+.faq-list {
+  display: block;
+  max-width: 900px;
+  margin: 30px auto 0;
+  color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  background: rgba(66, 134, 244, .3);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(66, 134, 244, .7);
+}
+
+.faq-question {
+  margin-bottom: 10px;
+  padding: 15px;
+  background: rgba(66, 134, 244, .3);
+  background: linear-gradient(to top, rgba(66, 134, 244, .2) 0%, rgba(66, 134, 244, .9) 100%);
+  border-radius: 5px 5px 0 0;
+  font: 24px RobotoRegular, sans-serif;
+}
+
+.faq-answers {
+  padding: 0 15px 15px;
+  font: 20px RobotoRegular, sans-serif;
+}
+
 // медиа
 
 @media only screen and (max-width : 992px) {
@@ -475,6 +560,17 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width : 768px) {
+
+  body{
+    border-left: none;
+    border-right: none;
+  }
+
+  .header {
+    width: 100%;
+    margin: 0;
+  }
+
   .description{
     font-size: 20px;
     line-height: 24px;
