@@ -139,6 +139,10 @@ body {
   border-right: 15px solid #fff;
 }
 
+.wrapper {
+  margin-top: -15px;
+}
+
 .nav-bg{
   position: fixed;
   top: 0;
@@ -195,6 +199,10 @@ body {
     font: 18px RobotoRegular, sans-serif;
     color: #fff;
     transition: .3s;
+    &.active {
+      background: #236be0;
+      box-shadow: 0 3px 7px 0 rgba(35, 107, 224, .9);
+    }
     &:hover{
       background: #236be0;
       box-shadow: 0 3px 7px 0 rgba(35, 107, 224, .9);
@@ -233,7 +241,7 @@ body {
 
 .section1 {
   max-width: 1440px;
-  margin: 50px auto 0;
+  margin: 0 auto 0;
   text-align: center;
   background: url('/assets/bg-sec1.jpg') no-repeat center right;
 }
@@ -252,7 +260,7 @@ h1, h2 {
 }
 
 .profile-wrap {
-  padding: 30px 15px 30px;
+  padding: 70px 15px 30px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -527,6 +535,7 @@ input[type="submit"] {
   font: 20px RobotoRegular, sans-serif;
 }
 
+
 // медиа
 
 @media only screen and (max-width : 992px) {
@@ -564,6 +573,9 @@ input[type="submit"] {
   body{
     border-left: none;
     border-right: none;
+    // -moz-hyphens: auto;
+    // -webkit-hyphens: auto;
+    // -ms-hyphens: auto;
   }
 
   .header {
@@ -577,6 +589,10 @@ input[type="submit"] {
   }
   .btn1 {
     font-size: 16px;
+  }
+
+  .tb-hidden {
+    display: none;
   }
 }
 
