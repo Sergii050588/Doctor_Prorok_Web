@@ -1,25 +1,25 @@
 <%= hidden_field_tag :direction, params[:direction] %>
 <%= hidden_field_tag :sort, params[:sort] %>
 <div class="table-responsive">
-  <table class="table table-bordered table-condensed">
+  <table class="table table-bordered table-condensed tb-consultation">
      <tr>
-        <th> <%= "ID" %></th>
+        <th class="tb-hidden"> <%= "ID" %></th>
         <th> <%= "ФИО" %></th>
-        <th> <%= "Возраст клиента" %></th>
+        <th class="tb-hidden"> <%= "Возраст клиента" %></th>
         <th> <%= "Суть вопроса" %></th>
-        <th> <%= "Срочность" %></th>
-        <th> <%= "Город пациента" %></th>
+        <th class="tb-hidden"> <%= "Срочность" %></th>
+        <th class="tb-hidden"> <%= "Город пациента" %></th>
         <th> <%= "Дата создания" %></th>
       </tr>
 
       <% @consultations.each do |consultation| %>
         <tr>
-          <td><%= link_to consultation.id, consultation_path(consultation) %></td>
-           <td><%= link_to consultation.last_name << "  " << consultation.first_name << " " << consultation.patronymic_name, consultation_path(consultation) %> </td>
-          <td><%= consultation.age %></td>
+          <td class="tb-hidden"><%= link_to consultation.id, consultation_path(consultation) %></td>
+          <td><%= link_to consultation.last_name << "  " << consultation.first_name << " " << consultation.patronymic_name, consultation_path(consultation) %> </td>
+          <td class="tb-hidden"><%= consultation.age %></td>
           <td><%= consultation.subject %></td>
-          <td><%= consultation.importance %></td>
-          <td><%= consultation.city %></td>
+          <td class="tb-hidden"><%= consultation.importance %></td>
+          <td class="tb-hidden"><%= consultation.city %></td>
           <td><%= consultation.created_at %></td>
         </tr>
       <% end %>
