@@ -189,6 +189,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background: #4286f4;
+
   
   li{
     display: block;
@@ -565,6 +566,12 @@ input[type="submit"] {
   }
   .mobile-menu {
     display: block;
+  }
+
+  .dropdown .dropdown-menu {
+    position: fixed;
+    top: 50px;
+    right: 160px;
   }
 }
 
