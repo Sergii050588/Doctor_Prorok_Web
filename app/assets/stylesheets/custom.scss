@@ -139,8 +139,13 @@ body {
   border-right: 15px solid #fff;
 }
 
+tbody a:hover {
+  background: none;
+}
+
 .wrapper {
-  margin-top: -15px;
+  margin-top: -25px;
+  margin-bottom: -15px;
 }
 
 .nav-bg{
@@ -171,6 +176,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background: #4286f4;
+  border-radius: 0 0 10px 10px;
   box-shadow: 0 3px 5px 0 rgba(66, 134, 244, .7);
   z-index: 10;
 }
@@ -248,7 +254,7 @@ body {
 }
 
 .caption1 {
-  margin-bottom: 30px;
+  margin: 45px auto 30px;
   padding: 0 30px;
   font: 28px RobotoBold, sans-serif;
 
@@ -267,6 +273,7 @@ h1, h2 {
   flex-wrap: wrap;
   align-items: center;
   background: rgba(66, 134, 244, .7);
+  border-radius: 10px;
 }
 
 .profile {
@@ -340,6 +347,7 @@ h1, h2 {
   text-align: center;
   color: #fff;
   background-color: #4286f4;
+  border-radius: 10px 10px 0 0;
   .footer_text{
     font: 20px RobotoRegular, sans-serif;
     margin-bottom: 0;
@@ -454,6 +462,7 @@ input[type="submit"] {
 // контакты
 
 .contacts-wrap {
+  height: 100%;
   background: url('/assets/bg1.jpg') no-repeat center;
   background-size: cover;
 }
@@ -461,7 +470,7 @@ input[type="submit"] {
 .contacts-bg {
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh);
   padding: 15px;
   align-items: center;
   background: rgba(66, 134, 244, .7);
@@ -503,7 +512,7 @@ input[type="submit"] {
 
 .faq-bg {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh);
   padding: 15px;
   background: rgba(66, 134, 244, .7);
 }
@@ -511,7 +520,7 @@ input[type="submit"] {
 .faq-list {
   display: block;
   max-width: 900px;
-  margin: 30px auto 0;
+  margin: 70px auto 0;
   color: #fff;
 }
 

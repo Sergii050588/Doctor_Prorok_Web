@@ -8,7 +8,7 @@
         <th class="tb-hidden"> <%= "Возраст клиента" %></th>
         <th> <%= "Категория" %></th>
         <th class="tb-hidden"> <%= "Город клиента" %></th>
-        <th> <%= "Дата создания" %></th>
+        <th class="tb-hidden"> <%= "Дата создания" %></th>
       </tr>
 
       <% @questions.each do |question| %>
@@ -18,7 +18,7 @@
           <td class="tb-hidden"><%= question.age %></td>
           <td><%= question.category %></td>
           <td class="tb-hidden"><%= question.city %></td>
-          <td><%= question.created_at %></td>
+          <td class="tb-hidden"><%= question.created_at %></td>
         </tr>
       <% end %>
   </table>
