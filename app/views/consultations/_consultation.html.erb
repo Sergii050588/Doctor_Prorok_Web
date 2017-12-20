@@ -9,7 +9,7 @@
         <th> <%= "Суть вопроса" %></th>
         <th class="tb-hidden"> <%= "Срочность" %></th>
         <th class="tb-hidden"> <%= "Город пациента" %></th>
-        <th> <%= "Дата создания" %></th>
+        <th class="tb-hidden"> <%= "Дата создания" %></th>
       </tr>
 
       <% @consultations.each do |consultation| %>
@@ -20,7 +20,7 @@
           <td><%= consultation.subject %></td>
           <td class="tb-hidden"><%= consultation.importance %></td>
           <td class="tb-hidden"><%= consultation.city %></td>
-          <td><%= consultation.created_at %></td>
+          <td class="tb-hidden"><%= consultation.created_at %></td>
         </tr>
       <% end %>
   </table>
