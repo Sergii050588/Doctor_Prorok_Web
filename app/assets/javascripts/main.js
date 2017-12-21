@@ -32,7 +32,16 @@ $(document).on('turbolinks:load', function() {
 
 	$('.faq-item').find('div').click(function(){
        $(this).next().stop().slideToggle();
-   }).next().stop().hide();
+	}).next().stop().hide();
+
+
+	$('.main-menu a').each(function () {             
+        var location = window.location.href; 
+        var link = this.href;                
+        if(location == link) {               
+            $(this).addClass('active');  
+        }
+    });
 
 });
 
