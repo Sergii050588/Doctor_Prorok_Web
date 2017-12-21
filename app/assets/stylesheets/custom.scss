@@ -133,7 +133,7 @@ tr:nth-child(even) {
 
 body {
   position: relative;
-  padding-top: 60px;
+  padding-top: 50px;
   background: #fff !important;
   border-left: 15px solid #fff;
   border-right: 15px solid #fff;
@@ -144,8 +144,9 @@ tbody a:hover {
 }
 
 .wrapper {
-  margin-top: -25px;
-  margin-bottom: -15px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  // min-height: calc(100vh - 120px);
 }
 
 .nav-bg{
@@ -254,7 +255,7 @@ tbody a:hover {
 }
 
 .caption1 {
-  margin: 45px auto 30px;
+  margin: 40px auto 30px;
   padding: 0 30px;
   font: 28px RobotoBold, sans-serif;
 
@@ -462,7 +463,6 @@ input[type="submit"] {
 // контакты
 
 .contacts-wrap {
-  height: 100%;
   background: url('/assets/bg1.jpg') no-repeat center;
   background-size: cover;
 }
@@ -470,7 +470,7 @@ input[type="submit"] {
 .contacts-bg {
   display: flex;
   width: 100%;
-  min-height: calc(100vh);
+  min-height: calc(100vh - 100px);
   padding: 15px;
   align-items: center;
   background: rgba(66, 134, 244, .7);
@@ -512,7 +512,7 @@ input[type="submit"] {
 
 .faq-bg {
   width: 100%;
-  min-height: calc(100vh);
+  min-height: calc(100vh - 100px);
   padding: 15px;
   background: rgba(66, 134, 244, .7);
 }
