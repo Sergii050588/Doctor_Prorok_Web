@@ -278,26 +278,29 @@ h1, h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   background: rgba(66, 134, 244, .7);
   // border-radius: 10px;
 }
 
 .profile {
-  max-width: 400px;
-  width: 100%;
-  max-height: 400px;
+  max-width: 300px;
+  // width: 100%;
+  max-height: 500px;
   margin: 0 auto;
+  margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(66, 134, 244, .7);
   overflow: hidden;
   img{
+
     max-width: 100%;
+    
   }
 }
 
 .description{
-  max-width: 700px;
+  max-width: 900px;
   margin: 5px auto;
   padding: 15px;
   font:  26px RobotoRegular, sans-serif;
