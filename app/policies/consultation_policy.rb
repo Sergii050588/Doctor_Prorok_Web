@@ -27,13 +27,8 @@ class ConsultationPolicy < ApplicationPolicy
   end
 
   def activate_deactivate_consultation?
-    if (@consultation.archive == false) 
-      @consultation.update_column(:archive, true)
-      redirect_to @consultation, notice: "Запрос отправлен в архив"
-    else
-      @consultation.update_column(:archive, false)
-      redirect_to @consultation, notice: "Запрос извлечен из архива"
-    end
+    return true if @current_user
+    false
   end
 
    #Randge by CATEGOTY
