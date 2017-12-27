@@ -2,15 +2,13 @@
 lock "~> 3.10.1"
 
 set :application, "Doctor_Prorok_Web"
-# set :repo_url, "git@github.com:Sergii050588/Doctor_Prorok_Web"
-
-set :repo_url, 'https://Sergii050588:g8s12kl9@github.com/Sergii050588/Doctor_Prorok_Web'
+set :repo_url, "git@github.com:Sergii050588/Doctor_Prorok_Web"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/railman/Rails/"
+set :deploy_to, "/Rails/Doctor_Prorok_Web"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
